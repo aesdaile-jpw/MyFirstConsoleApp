@@ -1,11 +1,29 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-Console.WriteLine("Trying Github again");
+﻿
 
-Console.WriteLine("This is test branch 2");
-Console.WriteLine("Now with eextra text");
+OperatorExamples();
 
-Console.WriteLine("Test Branch 1");
-Console.WriteLine("An added line");
-Console.ReadLine();
+void OperatorExamples()
+{
+    // this statement delcares a variable and sets it to 3
+    int width = 3;
 
+    // the ++ operator increments a variable (adds 1 to it)
+    width++;
+
+    // declare two more int variables ato hold numbers and
+    // use the + and * operators to add and umltiply values
+    int height = 2 + 4;
+    int area = width * height;
+    Console.WriteLine(area);
+
+    // th enext two statements declare string variables
+    // and use + to concatenate them
+    string result = "The area:";
+    result = result + " is " + area;
+    Console.WriteLine(result);
+
+    // a boolean variable is either true or false
+    bool truthValue = true;
+    Console.WriteLine(truthValue);
+
+}
