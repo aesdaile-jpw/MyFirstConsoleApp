@@ -15,6 +15,17 @@ void OperatorExamples()
     int height = 2 + 4;
     int area = width * height;
     Console.WriteLine(area);
+    while (area < 20)
+    {
+        height++;
+        area = width * height;
+    }
+    do
+    {
+        width--;
+        area = width * height;
+    } while (area > 25);
+
 
     // th enext two statements declare string variables
     // and use + to concatenate them
