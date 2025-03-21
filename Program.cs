@@ -27,7 +27,7 @@ void OperatorExamples()
     } while (area > 25);
 
 
-    // th enext two statements declare string variables
+    // the next two statements declare string variables
     // and use + to concatenate them
     string result = "The area:";
     result = result + " is " + area;
