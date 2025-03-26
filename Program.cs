@@ -1,5 +1,8 @@
 ﻿
 
+
+using System.Globalization;
+
 OperatorExamples();
 
 void OperatorExamples()
@@ -42,4 +45,58 @@ void OperatorExamples()
         Console.WriteLine("Iteration #" + i);
     }
 
+    int p = 2;
+    for ( int q = 2; q < 32; q = q * 2)
+    {
+        while (p<q)
+        {
+            p = p * 2;
+        }
+        q = p - q;
+    }
+
+}
+
+TryAnIf();
+
+void TryAnIf()
+{
+    int someValue = 4;
+    string name = "Bob";
+    if ( (someValue == 3) && ( name == "Joe") )
+    {
+        Console.WriteLine("x is 3 and the name is Joe");
+    }
+    Console.WriteLine("This line runs no matter what");
+}
+
+TrySomeLoops();
+
+void TrySomeLoops()
+{
+    int count = 0;
+    while (count < 10)
+    {
+        count = count + 1;
+    }
+    for (int i = 0; i < 5; i++)
+    {
+        count = count - 1;
+    }
+    Console.WriteLine("The answer is " + count);
+}
+
+TryAnIfElse();
+
+void TryAnIfElse()
+{
+    int x = 5;
+    if (x == 10)
+    {
+        Console.WriteLine("x must be 10");
+    }
+    else
+    {
+        Console.WriteLine("x isn't 10");
+    }
 }
