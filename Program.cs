@@ -26,8 +26,7 @@ void OperatorExamples()
         area = width * height;
     } while (area > 25);
 
-
-    // th enext two statements declare string variables
+    // the next two statements declare string variables
     // and use + to concatenate them
     string result = "The area:";
     result = result + " is " + area;
@@ -36,5 +35,10 @@ void OperatorExamples()
     // a boolean variable is either true or false
     bool truthValue = true;
     Console.WriteLine(truthValue);
+
+    for (int i = 0; i < 10; i++)
+    {
+        Console.WriteLine("Iteration #" + i);
+    }
 
 }
