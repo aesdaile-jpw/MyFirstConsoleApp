@@ -63,6 +63,7 @@ void TryAnIf()
 {
     int someValue = 4;
     string name = "Bob";
+    return;
     if ( (someValue == 3) && ( name == "Joe") )
     {
         Console.WriteLine("x is 3 and the name is Joe");
@@ -99,4 +100,10 @@ void TryAnIfElse()
     {
         Console.WriteLine("x isn't 10");
     }
+    string? line = Console.ReadLine();
+    if (line != null)
+    {
+        Console.WriteLine("You typed: " + line);
+    }
+
 }
