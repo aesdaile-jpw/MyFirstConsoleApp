@@ -107,3 +107,16 @@ void TryAnIfElse()
     }
 
 }
+
+RandomThing();
+void RandomThing()
+{
+    double[] randomDoubles = new double[ 20 ];
+    for (int i = 0; i<randomDoubles.Length; i++)
+    {
+        double value = Random.Shared.NextDouble();
+        randomDoubles[ i ] = value;
+        Console.WriteLine( "Random number " + i + " is " + value.ToString( "F2", CultureInfo.InvariantCulture ) );
+    }
+}
+
