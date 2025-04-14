@@ -116,7 +116,7 @@ void RandomThing()
     {
         double value = Random.Shared.NextDouble();
         randomDoubles[ i ] = value;
-        Console.WriteLine( "Random number " + i + " is " + value.ToString( "F2", CultureInfo.InvariantCulture ) );
+        Console.WriteLine( "Random number " + i + " is " + value.ToString("F4") );
     }
 }
 
